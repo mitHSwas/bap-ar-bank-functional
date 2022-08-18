@@ -1,6 +1,7 @@
 function getInputValueById(inputId) {
     const inputValueString = document.getElementById(inputId);
     const inputValueAmount = parseFloat(inputValueString.value);
+    inputValueString.value = "";
     return inputValueAmount;
 }
 
@@ -10,6 +11,6 @@ function getElementValueById(elementId) {
     return previousDepositAmount;
 }
 
-function setElementValueById(elementId) {
-    const
+function setElementValueById(setElementId, newElementValue) {
+    document.getElementById(setElementId).innerText = newElementValue;
 }
